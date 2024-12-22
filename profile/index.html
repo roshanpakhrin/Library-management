@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="App.js">
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="logo">Ale</div>
+      <nav>
+        <ul>
+          <li class="active">Discover</li>
+          <li>Category</li>
+          <li>Favorite</li>
+          <li>My Profile</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <h1>Discover</h1>
+        <input type="text" placeholder="Search" class="search-bar" />
+      </header>
+
+      <section class="profile">
+        <h2>My Profile</h2>
+        <div class="profile-content">
+          <div class="profile-picture">
+            <img src="https://via.placeholder.com/150" alt="profile" class="picture" />
+            <button class="btn-primary">Change picture</button>
+            <button class="btn-danger">Delete picture</button>
+          </div>
+          <form class="profile-form">
+            <label>
+              User name
+              <input type="text" value="kevin jones" readonly />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="Enter email" />
+            </label>
+            <label>
+              About me
+              <textarea placeholder="Write about yourself"></textarea>
+            </label>
+            <button type="submit" class="btn-save">Save changes</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
