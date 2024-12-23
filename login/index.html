@@ -10,14 +10,14 @@
     <div class="login-container">
       <div class="login-card">
         <h2 class="login-title">LogIn</h2>
-        <form>
+        <form action="../api/login.php" method="post">
           <div class="input-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Username" />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email" />
           </div>
           <div class="input-group">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Password" />
+            <input type="password" name="password" id="password" placeholder="Password" />
           </div>
           <div class="options">
             <label>

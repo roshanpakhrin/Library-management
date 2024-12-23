@@ -8,7 +8,7 @@ body {
     height: 100vh;
   }
   
-  .login-container {
+  .SignUp-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 
 
   
-  .login-card {
+  .SignUp-card {
     background: #ffffff;
     padding: 2rem;
     border-radius: 12px;
@@ -29,7 +29,7 @@ body {
     text-align: center;
   }
   
-  .login-title {
+  .SignUp-title {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -78,7 +78,7 @@ body {
     font-weight: 500;
   }
   
-  .login-button {
+  .SignUp-button {
     width: 40%;
     padding: 0.75rem;
     background-color: #901ff3;
@@ -91,7 +91,7 @@ body {
     transition: background-color 0.3s ease;
   }
   
-  .login-button:hover {
+  .SignUp-button:hover {
     background-color: #6842d8;
   }
   
