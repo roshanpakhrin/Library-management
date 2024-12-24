@@ -1,3 +1,8 @@
+<?php
+session_start();
+$userId = $_SESSION["userId"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -252,8 +257,20 @@
           </div>
         </div>
         <div class="auth-buttons">
+        <?php
+        if (isset($userId)) {
+?>
+<a href="api/logout.php">
+  <button >Log Out</button>
+  </a>
+  <?php 
+        }else {
+                 ?>
+     
           <button class="login">Log In</button>
           <button class="signup">Sign Up</button>
+        
+        <?php }?>
         </div>
       </div>
 
@@ -305,11 +322,11 @@
       document.querySelector(".login").addEventListener("click", function () {
         window.location.href = "login"; // URL of your login page
       });
-    </script>
-    <script>
       document.querySelector(".signup").addEventListener("click", function () {
         window.location.href = "signup"; // URL of your login page
-      });
-    </script>
+      }); 
+      document.getElementById("logout").addEventListener("click", function () {
+        window.location.href = "/api/logout.php";}) // URL of your logout page   
+         </script>
   </body>
 </html>

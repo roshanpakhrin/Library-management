@@ -12,5 +12,7 @@ VALUES ('$name', '$email','$pwd_hash')";
 if (!mysqli_query($conn, $sql)) {
     die("Insert error: " . mysqli_error($conn));
 }
+
+
 header("location: /Library Management");
 exit();
